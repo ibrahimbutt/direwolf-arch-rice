@@ -12,7 +12,7 @@ echo "Checking for system updates..."
 sudo pacman -Syu
 
 echo "Installing dependencies..."
-sudo pacman -S --noconfirm base-devel cairo libxcb python3 xcb-proto xcb-util-image xcb-util-wm xcb-util-xrm alsa-lib jsoncpp libmpdclient libcurl wireless_tools imagemagikck feh nitrogen bgs hsetroot habak
+sudo pacman -S --noconfirm base-devel cairo libxcb python3 xcb-proto xcb-util-image xcb-util-wm xcb-util-xrm alsa-lib jsoncpp libmpdclient libcurl wireless_tools imagemagick feh nitrogen bgs hsetroot habak
 
 echo "Checking for system updates..."
 sudo pacman -Syu
