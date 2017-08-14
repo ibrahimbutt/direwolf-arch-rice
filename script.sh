@@ -40,5 +40,6 @@ mkdir polybar/build
 cd polybar/build
 cmake ..
 sudo make install
+install -Dm644 /usr/share/doc/polybar/config $HOME/.config/polybar/config
 
 pacaur -S python-pywal
