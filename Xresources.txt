@@ -14,17 +14,17 @@ URxvt*lineSpace:                1
 URxvt.letterSpace:              0
 URxvt.iso14755:                 false
 URxvt.iso14755_52:              false
-URxvt*geometry:                 65x17
+URxvt*geometry:                 240x84
 URxvt.scrollBar:                false
 URxvt*loginShell:               true
 URxvt.internalBorder:           25
 URxvt.perl-ext:             default,matcher
-URxvt.url-launcher:             chromium
+URxvt.url-launcher:             firefox
 URxvt.matcher.button:         1
 
-*.foreground:   #ffeefc
-*.background:   #141021
-*.cursorColor:  #c16772
+*.foreground:   #707880
+*.background:   #1d1f21
+*.cursorColor:  #cc6666
 
 ! black
 *.color0:       #4f4858
