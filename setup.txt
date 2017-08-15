@@ -1,9 +1,10 @@
 netctl enable SKY; reboot
 
 sudo pacman -Syu
-mkdir -p /tmp/pacaur_install; cd /tmp/pacaur_install
+sudo pacman -S base-devel
 
-sudo pacman -S binutils make gcc fakeroot pkg-config expac yajl git --noconfirm --needed
+mkdir -p /tmp/pacaur_install; cd /tmp/pacaur_install
+sudo pacman -S expac yajl git
 
 curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=cower
 makepkg PKGBUILD --skippgpcheck --install --needed
