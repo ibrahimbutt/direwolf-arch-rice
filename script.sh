@@ -17,7 +17,9 @@ sudo pacman -Syu
 sudo pacman -S cairo libxcb python3 xcb-proto xcb-util-image xcb-util-wm xcb-util-xrm python-pip imagemagick
 
 pacaur -S python-pywal
+sudo pacman -Syu
 pacaur -S polybar-git
+sudo pacman -Syu
 
 cd ~
 cd mkdir polybar/build
