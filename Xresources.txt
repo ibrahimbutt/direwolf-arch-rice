@@ -11,62 +11,13 @@ Xft.rgba:                       rgb
 URxvt*termName:                 rxvt-256color
 URxvt.depth:                    32
 URxvt*lineSpace:                1
-URxvt.letterSpace:              0
+URxvt.letterSpace:              -1
 URxvt.iso14755:                 false
 URxvt.iso14755_52:              false
-URxvt*geometry:                 240x84
+URxvt*geometry:                 65x17
 URxvt.scrollBar:                false
 URxvt*loginShell:               true
 URxvt.internalBorder:           25
-URxvt.perl-ext:             default,matcher
+URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:             firefox
-URxvt.matcher.button:         1
-
-*.foreground:   #707880
-*.background:   #1d1f21
-*.cursorColor:  #cc6666
-
-! black
-*.color0:       #4f4858
-*.color8:       #545d67
-
-! red
-*.color1:       #c05c47
-*.color9:       #c16772
-
-! green
-*.color2:       #428e8e
-*.color10:      #afda6e
-
-! yellow
-*.color3:       #e4b226
-*.color11:      #ebcf1a
-
-! blue
-*.color4:       #4457a3
-*.color12:      #4880a5
-
-! magenta
-*.color5:       #903a62
-*.color13:      #9568a1
-
-! cyan
-*.color6:       #7aa1dc
-*.color14:      #abbcda
-
-! white
-*.color7:       #c4b7c5
-*.color15:      #ffeefc
-
-rofi.color-enabled: true
-rofi.color-window: #141021, #c16772, #9568a1
-rofi.color-normal: #141021, #ffeefc, #312842, #c16772, #ffeefc
-rofi.color-active: #141021, #c05c47, #312842, #c05c47, #ffeefc
-rofi.color-urgent: #141021, #e4b226, #312842, #e4b226, #ffeefc
-rofi.width: 800
-rofi.padding: 50
-rofi.font: PragmataPro Nerd Font 18
-rofi.bw: 3
-rofi.separator-style: solid
-rofi.hide-scrollbar: true
-
+URxvt.matcher.button: 		1
