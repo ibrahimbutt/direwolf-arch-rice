@@ -13,15 +13,11 @@ makepkg PKGBUILD --install --needed
 cd ~
 rm -r /tmp/pacaur_install
 
-sudo pacman -Syu
 sudo pacman -S cairo libxcb python3 xcb-proto xcb-util-image xcb-util-wm xcb-util-xrm python-pip imagemagick
-
-sudo pacman -Syu
 pacaur -S python-pywal
-sudo pacman -Syu
 pacaur -S polybar-git
 
 
 cd ~
-cd mkdir polybar/build
+mkdir polybar/build
 install -Dm644 /usr/share/doc/polybar/config $HOME/.config/polybar/config
