@@ -1,11 +1,10 @@
-netctl enable SKY
-reboot
+netctl enable SKY; reboot
 
 sudo pacman -Syu
-mkdir -p /tmp/pacaur_install
-cd /tmp/pacaur_install
-sudo pacman -S binutils make gcc fakeroot pkg-config --noconfirm --needed
-sudo pacman -S expac yajl git --noconfirm --needed
+mkdir -p /tmp/pacaur_install; cd /tmp/pacaur_install
+
+sudo pacman -S binutils make gcc fakeroot pkg-config expac yajl git --noconfirm --needed
+
 curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=cower
 makepkg PKGBUILD --skippgpcheck --install --needed
 curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=pacaur
@@ -16,10 +15,11 @@ rm -r /tmp/pacaur_install
 sudo pacman -Syu
 sudo pacman -S cairo libxcb python3 xcb-proto xcb-util-image xcb-util-wm xcb-util-xrm python-pip imagemagick
 
+sudo pacman -Syu
 pacaur -S python-pywal
 sudo pacman -Syu
 pacaur -S polybar-git
-sudo pacman -Syu
+
 
 cd ~
 cd mkdir polybar/build
