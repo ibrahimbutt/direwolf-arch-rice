@@ -1,0 +1,63 @@
+Extension "XFIG Input" failed to load because a dependency was not met.
+Dependency:
+  type: executable
+  location: path
+  string: fig2dev
+
+Extension "EPS Input" failed to load because a dependency was not met.
+Dependency:
+  type: executable
+  location: path
+  string: ps2pdf
+
+Extension "GIMP XCF" failed to load because a dependency was not met.
+Dependency:
+  type: executable
+  location: path
+  string: gimp
+
+Extension "DXF Output" failed to load because a dependency was not met.
+Dependency:
+  type: executable
+  location: path
+  string: pstoedit
+  description: pstoedit must be installed to run; see http://www.pstoedit.net/pstoedit
+
+Extension "PostScript Input" failed to load because a dependency was not met.
+Dependency:
+  type: executable
+  location: path
+  string: ps2pdf
+
+Extension "Sketch Input" failed to load because a dependency was not met.
+Dependency:
+  type: executable
+  location: path
+  string: skconvert
+
+Extension "Dia Input" failed to load because a dependency was not met.
+Dependency:
+  type: executable
+  location: path
+  string: dia
+  description: In order to import Dia files, Dia itself must be installed.  You can get Dia at http://live.gnome.org/Dia
+
+Extension "Win32 Vector Print" failed to load because the extension is designed for Windows only.  This is caused by an improper .inx file for this extension.  An improper .inx file could have been caused by a faulty installation of Inkscape.
+Extension "LaTeX" failed to load because a dependency was not met.
+Dependency:
+  type: executable
+  location: path
+  string: latex
+
+Extension "LaTeX" failed to load because a dependency was not met.
+Dependency:
+  type: executable
+  location: path
+  string: dvips
+
+Extension "LaTeX" failed to load because a dependency was not met.
+Dependency:
+  type: executable
+  location: path
+  string: pstoedit
+
