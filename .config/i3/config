@@ -140,7 +140,7 @@ client.placeholder      #cc6666 #cc6666 #cc6666 #cc6666   #1d1f21
 client.background       #ffffff
 
 exec_always wal -R -n
-exec_always feh --bg-fill ~/Pictures/bg2.jpg
+exec_always feh --bg-fill ~/Pictures/bg1.jpeg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 
