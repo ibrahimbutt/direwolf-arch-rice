@@ -80,7 +80,7 @@ cp -r ~/Linux-Ricing/.config/ ~/
 cp -r ~/Linux-Ricing/.Xresources ~/
 xrdb .Xresources
 ```
-You will need to run `wal -i <path_to_image/directory>` again here, so Urxvt used the colorscheme.
+You will need to run `wal -i ~/Pictures/Wal/bg1.jpg` again here, so Urxvt used the colorscheme.
 
 Refresh i3 by pressing mod+r.
 
@@ -94,7 +94,7 @@ Only terminals and windows opened after this point will have the changes applied
 Refresh i3 to see changes.
 
 ### Make Changes To i3 Config
-Read through the whole config file and understand what's happening. Change anything that's necessary. The comments will give you hints as to what you may want to change. Do not skip this step.
+Read through the whole config file and understand what's happening. Change anything that's necessary. The comments will give you hints as to what you may want to change. Do not skip this step. It'll teach you got to use i3.
 
 ### Preview Imasges In Ranger
 
