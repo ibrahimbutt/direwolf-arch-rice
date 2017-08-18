@@ -1,67 +1,74 @@
+# Set modifier key to alt
 set $mod Mod1
+
+# Set display resolution
+exec_always --no-startup-id xrandr --output DP1-8 --mode 2560x1440 --rate 59.95
 
 font pango:Overpass Regular 8
 
+# Press mod key to be able to resize floating windows
 floating_modifier $mod
 
+# Open new terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+#Close window
 bindsym $mod+Shift+q kill
 
+# Open dmenu 
 bindsym $mod+d exec dmenu_run -fn 'Overpass Mono:pixelsize=15' -l 3 -nf '#707880' -sf '#cc6666' -nb '#1d1f21' -sb '#1d1f21'
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-# change focus
+# Change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
-# alternatively, you can use the cursor keys:
+# Alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# move focused window
+# Move focused window
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
 bindsym $mod+Shift+semicolon move right
 
-# alternatively, you can use the cursor keys:
+# Alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# split in horizontal orientation
+# Split in horizontal orientation
 bindsym $mod+h split h
 
-# split in vertical orientation
+# Split in vertical orientation
 bindsym $mod+v split v
 
-# enter fullscreen mode for the focused container
+# Enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
+# Change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-# toggle tiling / floating
+# Toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
-# change focus between tiling / floating windows
+# Change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
-# focus the parent container
+# Focus the parent container
 bindsym $mod+a focus parent
 
-# focus the child container
+# Focus the child container
 #bindsym $mod+d focus child
 
-# switch to workspace
+# Switch to workspace
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
@@ -73,7 +80,7 @@ bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
-# move focused container to workspace
+# Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+3 move container to workspace 3
@@ -85,14 +92,14 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
-# reload the configuration file
+# Reload the configuration file
 bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
+# Exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-# resize window (you can also use the mouse for that)
+# Resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
@@ -119,30 +126,41 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
+# Finds out, if available)
 bar {
         status_command i3status
         mode invisible
 }
 
 new_window pixel 2
+
 hide_edge_borders vertical
 
-# for_window [class="urxvt"] border pixel 5
+# Color variables
+set $unfocused_border #1D1F21
+set $focused_border #CC6666
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #cc6666 #cc6666 #ffffff #cc6666   #cc6666
-client.focused_inactive #cc6666 #cc6666 #ffffff #cc6666   #1d1f21
-client.unfocused        #cc6666 #cc6666 #cc6666 #cc6666   #1d1f21
-client.urgent           #cc6666 #cc6666 #ffffff #cc6666   #cc6666
-client.placeholder      #cc6666 #cc6666 #cc6666 #cc6666   #1d1f21
+client.focused          #ffffff #ffffff #ffffff #ffffff   $focused_border
+client.focused_inactive #ffffff #ffffff #ffffff #ffffff   $focused_border
+client.unfocused        #ffffff #ffffff #ffffff #ffffff   $unfocused_border
+client.urgent           #ffffff #ffffff #ffffff #ffffff   $focused_border
+client.placeholder      #ffffff #ffffff #ffffff #ffffff   #ffffff
 
 client.background       #ffffff
 
-exec_always wal -R -n
-exec_always feh --bg-fill ~/Pictures/bg1.jpeg
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+# Apply .Xresource. As far as I know, only needed here if using starx (dont have a login manager)
+exec_always --no-startup-id xrdb ~/.Xresources
 
+# Apply the last colorscheme generated without changing the background by using -n 
+exec_always --no-startup-id wal -R -n
+
+# Apply a background different than the one used by wal
+# If this isn't needed, remove it and remove -n flag from the above command
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Wal/bg1.jpg
+
+# Execute polybar on launch. Script kills current ones on i3 refresh, otherwise they duplicate
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume

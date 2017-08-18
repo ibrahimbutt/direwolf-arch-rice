@@ -21,27 +21,3 @@ URxvt.internalBorder:           25
 URxvt.perl-ext:	 		default,matcher
 URxvt.url-launcher:             firefox
 URxvt.matcher.button: 		1
-
-! special
-*.foreground:   #c5c8c6
-*.background:   #1d1f21
-*.cursorColor:  #c5c8c6
-
-*color0:  #e8eaf6
-*color1:  #c5cae9
-*color2:  #9fa8da
-*color3:  #7986cb
-*color4:  #5c6bc0
-*color5:  #3f51b5
-*color6:  #3949ab
-*color7:  #303f9f
-*color8:  #283593
-*color9:  #1a237e
-*color10: #8c9eff
-*color11: #536dfe
-*color12: #3d5afe
-*color13: #304ffe
-*color14: #93e0e3
-*color15: #ffffff
-
-
