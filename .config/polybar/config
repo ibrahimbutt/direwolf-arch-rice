@@ -26,9 +26,9 @@ padding-left = 1
 padding-right = 1
 module-margin = 0
 
-modules-left = i3
+modules-left = i3 
 modules-center = date
-# modules-right = date
+modules-right = cpu memory
 
 [module/i3]
 strip-wsnumbers = true
@@ -74,4 +74,16 @@ date = %A, %d %B %I:%M %p
 type = internal/xwindow
 # format-background = #f00
 format-foreground = #f0c674
-format-padding = 1i
+format-padding = 1
+label-maxlen = 50
+
+[module/cpu]
+type = internal/cpu
+format-padding = 1
+format = <label>
+label = CPU %percentage%%
+
+[module/memory]
+type = internal/memory
+format = <label>
+label = RAM %gb_used%
