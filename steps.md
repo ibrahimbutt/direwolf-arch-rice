@@ -91,7 +91,7 @@ Refresh i3 to see changes.
 
 ### Preview Imasges In Ranger
 
-Install w3m: `sudo pacman -S w3m`. Then run `vim ~/.config/ranger/rc.conf`. Press the letter i on your keyboard to enter insert mode, then type in `set preview_images true`. To write changes and quit Vim, press the escape key to exit insert mode and then type :wq. Lastly, run `ranger --copy-config=scope`.
+Install w3m: `sudo pacman -S w3m`. Then run `vim ~/.config/ranger/rc.conf`. Read it and understand it. Lastly, run `ranger --copy-config=scope`.
 
 Run `ranger` in the terminal and use arrows keys to navigate. Make your way to ~/Pictures/Wal/bg1.jpg and you should see a preview of it.
 
