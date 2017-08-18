@@ -92,7 +92,7 @@ Only terminals and windows opened after this point will have the changes applied
 Refresh i3 to see changes.
 
 ### Make Changes To i3 Config
-Read through the whole config file and understand what's happening. Change anything that's necessary. The comments will give you hints as to what you may want to change.
+Read through the whole config file and understand what's happening. Change anything that's necessary. The comments will give you hints as to what you may want to change. Do not skip this step.
 
 ### Preview Imasges In Ranger
 
