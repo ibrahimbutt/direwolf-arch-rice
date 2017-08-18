@@ -41,10 +41,13 @@ wal -i ~/Pictuers/Wal/bg1.jpg
 sudo pacman -S cairo libxcb python2 xcb-proto xcb-util-image xcb-util-wm xcb-util-xrm jsoncpp
 pacaur -S polybar-git
 
-cd ~
-cd ..
-cd ..
-cp /usr/share/doc/polybar/config ~/.config/polybar/
-polybar example
-
 git clone https://github.com/IbrahimButt/Linux-Ricing.git
+cp -r ~/Linux-Ricing/.config/ ~/
+
+cp -r ~/Linux-Ricing/.Xresources ~/
+
+close all
+refresh i3
+
+
+
