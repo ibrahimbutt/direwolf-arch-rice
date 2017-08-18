@@ -111,4 +111,4 @@ Your set up should be identical to mines now.
 
 ## Known Issues
 
-The xrandr setting needs to be set on each boot if you're using startx. I'm currently in the process of figuring that out. 
+The xrandr setting needs to be set on each boot if you're using startx. I'm currently in the process of figuring that out. If you have any issues, feel free to raise one.
