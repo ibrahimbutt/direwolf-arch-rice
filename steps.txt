@@ -60,3 +60,5 @@ vim ~/.config/ranger/rc.conf
 set preview_images true
 :wq
 ranger --copy-config=scope
+
+neofetch --w3m --source ~/Pictures/Wal/bg1.jpg 
