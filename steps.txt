@@ -46,3 +46,5 @@ cd ..
 cd ..
 cp /usr/share/doc/polybar/config ~/.config/polybar/
 polybar example
+
+git clone https://github.com/IbrahimButt/Linux-Ricing.git
