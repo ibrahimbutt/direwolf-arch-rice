@@ -3,13 +3,13 @@
 ## Installing Arch Linux
 If you already have Arch installed, install i3 and URXVT: `sudo pacman -S i3 rxvt-unicode`.
 
-If you do not have Arch installed, you can follow the installation guide or use Arch-Anywhere. Either way, use netctl for managing your wireless connection. If you use Arch-Anywhere, I will assume you selected i3 and rxvt-unicode during installation.
+If you do not have Arch installed, you can follow the [installation guide ](https://wiki.archlinux.org/index.php/installation_guide)or use [Arch-Anywhere](https://arch-anywhere.org/download/). Either way, use netctl for managing your wireless connection. If you use Arch-Anywhere, I will assume you selected i3 and rxvt-unicode during installation.
 
 ## First Boot/Log-In
 
 You will be prompted to select the windows or alt key as a modifier. The modifer key is used for controlling the window manager. After this, select yes to creating a config file.
 
-Open the terminal by pressing mod+enter, then run `sudo wifi-menu` to create a wireless profile and remember its name. Then run `sudo netctl enable <profile_name>`. This automatically conects you to wifi on each boot. Now run `reboot`.
+Open the terminal by pressing mod+enter, then run `sudo wifi-menu` to create a wireless profile and remember its name. Then run `sudo netctl enable <profile_name>`. This automatically connects you to wifi on each boot. Now run `reboot`.
 
 If you installed a login manager, make sure to select i3 as the desktop enviorment. For example, the gnome login manager has a small settings/cog icon that lets you do so.
 
