@@ -76,14 +76,3 @@ type = internal/xwindow
 format-foreground = #f0c674
 format-padding = 1
 label-maxlen = 50
-
-[module/cpu]
-type = internal/cpu
-format-padding = 1
-format = <label>
-label = CPU %percentage%%
-
-[module/memory]
-type = internal/memory
-format = <label>
-label = RAM %gb_used%
