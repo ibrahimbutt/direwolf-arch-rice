@@ -1,7 +1,7 @@
 # Installation Guide
 
 ## Installing Arch Linux
-If you already have Arch installed, install i3 and URXVT: `sudo pacman -S i3 rxvt-unicode`.
+If you already have Arch installed, install i3 and Urxvt: `sudo pacman -S i3 rxvt-unicode`.
 
 If you do not have Arch installed, you can follow the [installation guide ](https://wiki.archlinux.org/index.php/installation_guide)or use [Arch-Anywhere](https://arch-anywhere.org/download/). Either way, use netctl for managing your wireless connection. If you use Arch-Anywhere, I will assume you selected i3 and rxvt-unicode during installation.
 
@@ -13,7 +13,9 @@ Open the terminal by pressing mod+enter, then run `sudo wifi-menu` to create a w
 
 If you installed a login manager, make sure to select i3 as the desktop environment. For example, the gnome login manager has a small settings/cog icon that lets you do so.
 
-If you didn't install a login manager, type user username and then password. Once you've done that, type `startx` and hit enter to start i3. Your screen resolution may be incorrect. Run `xrandr` and identify your display. Then run `xrandr --output <source_name> --mode 2560x1440 --rate <refresh_rate>` For me it is `xrandr --output DP1-8 --mode 2560x1440 --rate 59.95`. If you have multiple monitors, check out the documentation here. The xrandr setting isn't permanent for now, we'll get to that later.
+If you didn't install a login manager, type your user username and then password. Once you've done that, type `startx` and hit enter to start i3.
+
+Your screen resolution may be incorrect. Run `xrandr` and identify your display. Then run `xrandr --output <source_name> --mode 2560x1440 --rate <refresh_rate>` For me it is `xrandr --output DP1-8 --mode 2560x1440 --rate 59.95`. If you have multiple monitors, check out the [documentation](https://wiki.archlinux.org/index.php/Xrandr). The xrandr setting isn't permanent for now, we'll get to that later.
 
 ## Lets Get Cooking!
 
@@ -88,6 +90,9 @@ Only terminals and windows opened after this point will have the changes applied
 `pacaur -S otf-overpass`
 
 Refresh i3 to see changes.
+
+### Make Changes To i3 Config
+Read through the whole config file and understand what's happening. Change anything that's necessary. The comments will give you hints as to what you may want to change.
 
 ### Preview Imasges In Ranger
 
