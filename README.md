@@ -112,10 +112,10 @@ neofetch --w3m --source ~/Pictures/Wal/bg1.jpg
 
 Go into ranger and type `zh` to display hidden files. Then go to ~/.config/polybar/launch.sh. Here you'll have a preview of the file. Read it to understand what is happening each time you boot/refresh i3.
 
-## Conclusion
+## Done!
 
 Your set up should be identical to mines now.
 
 ## Known Issues
 
-The xrandr setting needs to be set on each boot if you're using startx. I'm currently in the process of figuring that out. If you have any issues, feel free to raise one.
+The xrandr setting needs to be set on each boot if you're using startx. Therefore, I've added it as an `exec_always` in the i3 config. Refresh i3 to apply it on each boot. I'm currently in the process of figuring this out. If you have any other issues, feel free to raise it on here..
