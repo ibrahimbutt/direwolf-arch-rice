@@ -40,11 +40,14 @@ wal -i ~/Pictuers/Wal/bg1.jpg
 
 sudo pacman -S cairo libxcb python2 xcb-proto xcb-util-image xcb-util-wm xcb-util-xrm jsoncpp
 pacaur -S polybar-git
+talk about killing bar etc
 
 git clone https://github.com/IbrahimButt/Linux-Ricing.git
 cp -r ~/Linux-Ricing/.config/ ~/
 
 cp -r ~/Linux-Ricing/.Xresources ~/
+xrdb .Xresources
+wal -i ~/Pictuers/Wal/bg1.jpg
 
 close all
 refresh i3
