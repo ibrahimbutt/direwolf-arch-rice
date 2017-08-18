@@ -7,13 +7,13 @@ If you do not have Arch installed, you can follow the [installation guide ](http
 
 ## First Boot/Log-In
 
-You will be prompted to select the windows or alt key as a modifier. The modifer key is used for controlling the window manager. After this, select yes to creating a config file.
+You will be prompted to select the windows or alt key as a modifier. The modifier key is used for controlling the window manager. After this, select yes to creating a config file.
 
 Open the terminal by pressing mod+enter, then run `sudo wifi-menu` to create a wireless profile and remember its name. Then run `sudo netctl enable <profile_name>`. This automatically connects you to wifi on each boot. Now run `reboot`.
 
-If you installed a login manager, make sure to select i3 as the desktop enviorment. For example, the gnome login manager has a small settings/cog icon that lets you do so.
+If you installed a login manager, make sure to select i3 as the desktop environment. For example, the gnome login manager has a small settings/cog icon that lets you do so.
 
-If you didnt install a login manager, type user username and then password. Once youve did that, type `startx` and hit enter to start i3. Your screen resolution may be incorrect. Run `xrandr` and identify your display. Then run `xrandr --output <source_name> --mode 2560x1440 --rate <refresh_rate>` For me it is `xrandr --output DP1-8 --mode 2560x1440 --rate 59.95`. If you have multiple monitors, check out the documentation here. The xrandr setting isn't permanent for now, we'll get to that later.
+If you didn't install a login manager, type user username and then password. Once you've done that, type `startx` and hit enter to start i3. Your screen resolution may be incorrect. Run `xrandr` and identify your display. Then run `xrandr --output <source_name> --mode 2560x1440 --rate <refresh_rate>` For me it is `xrandr --output DP1-8 --mode 2560x1440 --rate 59.95`. If you have multiple monitors, check out the documentation here. The xrandr setting isn't permanent for now, we'll get to that later.
 
 ## Lets Get Cooking!
 
@@ -42,14 +42,14 @@ rm -r /tmp/pacaur_install
 
 ### Installing Pywal
 
-Python 3.5 or above is required, so ensure it's installed by running `python -V`. If it isnt, isntall it.
+Python 3.5 or above is required, so ensure it's installed by running `python -V`. If it isn't, install it.
 
 When you're good to go:
 ```
 sudo pacman -S feh imagemagick python-pip
 
 pacaur -S python-pywal
-# You dont need to view package build. If you decide to view it, it'll be displayed in Vim. Type `:q` to exit Vim.
+# You don't need to view package build. If you decide to view it, it'll be displayed in Vim. Type `:q` to exit Vim.
 ```
 #### Using Pywal
 Download the image here. Then do the following:
@@ -91,9 +91,9 @@ Refresh i3 to see changes.
 
 ### Preview Imasges In Ranger
 
-Install w3m: `sudo pacman -S w3m`. Then run `vim ~/.config/ranger/rc.conf`. Press the letter i on your keyboard to enter insert mode, then  type in `set preview_images true`. To write changes and quit Vim, press the escape key to exit insert mode and then type :wq. Lastly, run `ranger --copy-config=scope`.
+Install w3m: `sudo pacman -S w3m`. Then run `vim ~/.config/ranger/rc.conf`. Press the letter i on your keyboard to enter insert mode, then type in `set preview_images true`. To write changes and quit Vim, press the escape key to exit insert mode and then type :wq. Lastly, run `ranger --copy-config=scope`.
 
-Run `ranger` in the terminal and use arrows keys to navigate. Make your way to to ~/Pictures/Wal/bg1.jpg and you should see a preview io it.
+Run `ranger` in the terminal and use arrows keys to navigate. Make your way to ~/Pictures/Wal/bg1.jpg and you should see a preview of it.
 
 ### Get System Info and Replace ASCII Logo With Image
 
@@ -107,9 +107,8 @@ Go into ranger and type `zh` to display hidden files. Then go to ~/.config/polyb
 
 ## Conclusion
 
-Your set up should be identicle to mines now.
+Your set up should be identical to mines now.
 
 ## Known Issues
 
-The xrandr setting needs to be set on each boot if youre using startx. I'm currently in the process of figuring that out. 
-
+The xrandr setting needs to be set on each boot if you're using startx. I'm currently in the process of figuring that out. 
