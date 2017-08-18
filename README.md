@@ -26,11 +26,11 @@ Dmenu is used pressing mod+d, then typing in the package you want to use. This w
 
 ### Installing Pacaur
 ```
+cd ~
 mkdir -p /tmp/pacaur_install
 cd /tmp/pacaur_install
 
 sudo pacman -S base-devel
-# Install everything
 
 sudo pacman -S expac yajl git
 
