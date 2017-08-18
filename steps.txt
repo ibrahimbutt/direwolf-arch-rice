@@ -1,0 +1,30 @@
+UNFINISHED
+
+sudo wifi-menu
+
+sudo netctl enable SKY
+reboot
+
+reboot again if keyboard doesnt work. this time see wallpaper
+
+sudo pacman -Syu
+
+mkdir -p /tmp/pacaur_install
+cd /tmp/pacaur_install
+
+sudo pacman -S base-devel
+yes to all
+
+sudo pacman -S expac yajl git
+
+curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=cower
+makepkg PKGBUILD --skippgpcheck --install --needed
+
+curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=pacaur
+makepkg PKGBUILD --install --needed
+
+cd ~
+rm -r /tmp/pacaur_install
+
+pacaur -S pywal
+no need to view PKGBUILD
