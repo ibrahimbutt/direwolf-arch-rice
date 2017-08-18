@@ -10,7 +10,7 @@ reboot
 reboot again if keyboard doesnt work. this time see wallpaper
 
 sudo pacman -Syu
-sudo pacman -S dmenu vim firefox
+sudo pacman -S dmenu vim firefox rxvt-unicode
 
 mkdir -p /tmp/pacaur_install
 cd /tmp/pacaur_install
@@ -29,5 +29,13 @@ makepkg PKGBUILD --install --needed
 cd ~
 rm -r /tmp/pacaur_install
 
+sudo pacman -S feh imagemagick
+python 3.5 or above
+
+sudo pacman -S python-pip
 pacaur -S pywal
 no need to view PKGBUILD
+
+wal -i ~/Pictuers/Wal/bg1.jpg
+
+sudo pacman -S cairo libxcb python2 xcb-proto xcb-util-image xcb-util-wm xcb-util-xrm jsoncpp 
