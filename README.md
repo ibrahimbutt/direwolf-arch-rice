@@ -1,5 +1,7 @@
 # Installation Guide
 
+![The Setup](http://imgur.com/JZzTrvu)
+
 ## Installing Arch Linux
 If you already have Arch installed, install i3 and Urxvt: `sudo pacman -S i3 rxvt-unicode`.
 
