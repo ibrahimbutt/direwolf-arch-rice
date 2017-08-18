@@ -55,5 +55,8 @@ open new terinal and checkout ranger too
 
 pacaur -S otf-overpass
 
-
-
+sudo pacman -S w3m
+vim ~/.config/ranger/rc.conf
+set preview_images true
+:wq
+ranger --copy-config=scope
