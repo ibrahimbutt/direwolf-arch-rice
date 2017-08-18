@@ -46,7 +46,7 @@ rm -r /tmp/pacaur_install
 
 ### Installing Pywal
 
-Python 3.5 or above is required, so ensure it's installed by running `python -V`. If it isn't, install it.
+Python 3.5 or above is required, so ensure it's installed by running `python -V`. If it isn't, install it: `pacaur -S python`.
 
 When you're good to go:
 ```
@@ -86,7 +86,6 @@ Refresh i3 by pressing mod+r.
 
 Only terminals and windows opened after this point will have the changes applied to them. 
 
-
 ### Install Fonts
 
 `pacaur -S otf-overpass`
@@ -100,17 +99,19 @@ Read through the whole config file and understand what's happening. Change anyth
 
 Install w3m: `sudo pacman -S w3m`. Then run `vim ~/.config/ranger/rc.conf`. Read it and understand it. Lastly, run `ranger --copy-config=scope`.
 
-Run `ranger` in the terminal and use arrows keys to navigate. Make your way to ~/Pictures/Wal/bg1.jpg and you should see a preview of it.
+Run `ranger` in the terminal and use arrows keys to navigate. Make your way to `~/Pictures/Wal/bg1.jpg` and you should see a preview of it.
 
-### Get System Info and Replace ASCII Logo With Image
+### Neofetch System Info and Replace ASCII Logo With Image
 
-neofetch --w3m --source ~/Pictures/Wal/bg1.jpg
+`neofetch --w3m --source ~/Pictures/Wal/bg1.jpg`
+
+To customise what is displayed when you run `neofetch` or the above command, comment in/out lines in `~/.config/neofetch/config`.
 
 ### Activate Polybar
 
 ` polybar bar`
 
-Go into ranger and type `zh` to display hidden files. Then go to ~/.config/polybar/launch.sh. Here you'll have a preview of the file. Read it to understand what is happening each time you boot/refresh i3.
+Go into ranger and type `zh` to display hidden files. Then go to `~/.config/polybar/launch.sh`. Here you'll have a preview of the file. Read it to understand what is happening each time you boot/refresh i3.
 
 ## Done!
 
