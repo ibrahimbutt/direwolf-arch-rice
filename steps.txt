@@ -49,8 +49,11 @@ cp -r ~/Linux-Ricing/.Xresources ~/
 xrdb .Xresources
 wal -i ~/Pictuers/Wal/bg1.jpg
 
-close all
+close all windows
 refresh i3
+open new terinal and checkout ranger too
+
+pacaur -S otf-overpass
 
 
 
