@@ -1,5 +1,7 @@
 UNFINISHED
 
+xrandr --output DP1-8 --mode 2560x1440 --rate 59.95
+
 sudo wifi-menu
 
 sudo netctl enable SKY
@@ -8,6 +10,7 @@ reboot
 reboot again if keyboard doesnt work. this time see wallpaper
 
 sudo pacman -Syu
+sudo pacman -S dmenu vim firefox
 
 mkdir -p /tmp/pacaur_install
 cd /tmp/pacaur_install
