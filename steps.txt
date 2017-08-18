@@ -38,4 +38,11 @@ no need to view PKGBUILD
 
 wal -i ~/Pictuers/Wal/bg1.jpg
 
-sudo pacman -S cairo libxcb python2 xcb-proto xcb-util-image xcb-util-wm xcb-util-xrm jsoncpp 
+sudo pacman -S cairo libxcb python2 xcb-proto xcb-util-image xcb-util-wm xcb-util-xrm jsoncpp
+pacaur -S polybar-git
+
+cd ~
+cd ..
+cd ..
+cp /usr/share/doc/polybar/config ~/.config/polybar/
+polybar example
