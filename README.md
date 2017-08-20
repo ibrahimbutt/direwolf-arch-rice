@@ -31,7 +31,7 @@ Dmenu is used pressing mod+d, then typing in the package you want to use. This w
 
 ### Installing Pacaur
 
-Taken from the [Pacaur README](https://github.com/rmarquis/pacaur):
+Taken from the [Pacaur repository](https://github.com/rmarquis/pacaur):
 > Pacaur is an Arch User Repository (AUR) helper aiming at speed and simplicity and is designed to minimize user prompt interaction.
 
 By using Pacaur, you can install packages from AUR without going through the manual build process each time.
@@ -56,7 +56,7 @@ rm -r /tmp/pacaur_install
 ```
 
 ### Installing Pywal
-Taken from [Pywal README](https://github.com/dylanaraps/pywal):
+Taken from [Pywal repositry](https://github.com/dylanaraps/pywal):
 
 > wal is a script that takes an image (or a directory of images), generates a colorscheme (using imagemagick) and then changes all of your open terminal's colors to the new colorscheme on the fly. wal then caches each generated colorscheme so that cycling through wallpapers while changing colorschemes is instantaneous.
 
@@ -82,12 +82,17 @@ wal -i ~/Pictures/Wal/bg1.jpg
 ```
 
 ### Installing Polybar
+Taken from the [Polybar repository](https://github.com/jaagr/polybar): 
+> A fast and easy-to-use tool for creating status bars... Polybar aims to help users build beautiful and highly customizable status bars for their desktop environment, without the need of having a black belt in shell scripting.
+
+To install, first you'll need to install the dependencies and then Polybar itself:
 ```
 sudo pacman -S cairo libxcb python2 xcb-proto xcb-util-image xcb-util-wm xcb-util-xrm jsoncpp
 pacaur -S polybar-git
 ```
 
 ### Installing My Dot Files and .Xresources
+
 ```
 cd ~
 git clone https://github.com/IbrahimButt/Direwolf-Arch-Rice.git
