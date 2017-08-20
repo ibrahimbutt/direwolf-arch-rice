@@ -56,7 +56,7 @@ rm -r /tmp/pacaur_install
 ```
 
 ### Installing Pywal
-Taken from [Pywal README](https://github.com/dylanaraps/pywal)
+Taken from [Pywal README](https://github.com/dylanaraps/pywal):
 
 > wal is a script that takes an image (or a directory of images), generates a colorscheme (using imagemagick) and then changes all of your open terminal's colors to the new colorscheme on the fly. wal then caches each generated colorscheme so that cycling through wallpapers while changing colorschemes is instantaneous.
 
