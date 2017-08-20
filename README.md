@@ -56,7 +56,11 @@ pacaur -S python-pywal
 # You don't need to view package build. If you decide to view it, it'll be displayed in Vim. Type `:q` to exit Vim.
 ```
 #### Using Pywal
-Download the image [here](http://imgur.com/JZzTrvu). Then do the following:
+Open the linked image below in a new tab and download it. Save as `bg1.jpg`.
+
+![Wallpaper](https://github.com/IbrahimButt/Direwolf-Arch-Rice/blob/master/images/wallpaper.jpg)
+
+Now do the following:
 ```
 cd ~
 mkdir ~/Pictures/Wal/
