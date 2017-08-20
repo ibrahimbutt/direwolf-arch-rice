@@ -56,6 +56,9 @@ rm -r /tmp/pacaur_install
 ```
 
 ### Installing Pywal
+Taken from [Pywal README](https://github.com/dylanaraps/pywal)
+
+> wal is a script that takes an image (or a directory of images), generates a colorscheme (using imagemagick) and then changes all of your open terminal's colors to the new colorscheme on the fly. wal then caches each generated colorscheme so that cycling through wallpapers while changing colorschemes is instantaneous.
 
 Python 3.5 or above is required, so ensure it's installed by running `python -V`. If it isn't, install it: `pacaur -S python`.
 
@@ -64,8 +67,9 @@ When you're good to go:
 sudo pacman -S feh imagemagick python-pip
 
 pacaur -S python-pywal
-# You don't need to view package build. If you decide to view it, it'll be displayed in Vim. Type `:q` to exit Vim.
 ```
+Note: You don't need to view package build. If you decide to view it, it'll be displayed in Vim. Type `:q` to exit Vim.
+
 #### Using Pywal
 ![Wallpaper](https://github.com/IbrahimButt/Direwolf-Arch-Rice/blob/master/images/wallpaper.jpg)
 
