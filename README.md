@@ -1,6 +1,6 @@
 # Installation Guide
 
-![The Setup](https://i.redd.it/qpmai7t7ibgz.png)
+![The Setup](https://github.com/IbrahimButt/Direwolf-Arch-Rice/blob/master/images/finishedsetup.png)
 
 ## Installing Arch Linux
 If you already have Arch installed, install i3 and Urxvt: `sudo pacman -S i3 rxvt-unicode`.
@@ -56,14 +56,15 @@ pacaur -S python-pywal
 # You don't need to view package build. If you decide to view it, it'll be displayed in Vim. Type `:q` to exit Vim.
 ```
 #### Using Pywal
-Download the image [here](http://imgur.com/JZzTrvu). Then do the following:
+![Wallpaper](https://github.com/IbrahimButt/Direwolf-Arch-Rice/blob/master/images/wallpaper.jpg)
+
+Right click on the image above and save as `bg1.jpg`. Now do the following:
 ```
 cd ~
 mkdir ~/Pictures/Wal/
 mv ~/Downloads/bg1.jpg ~/Pictures/Wal/
+wal -i ~/Pictures/Wal/bg1.jpg
 ```
-
-To use Pywal, run `wal -i ~/Pictures/Wal/bg1.jpg`.
 
 ### Installing Polybar
 ```
