@@ -1,6 +1,6 @@
 # Installation Guide
 
-![The Setup](https://i.redd.it/qpmai7t7ibgz.png)
+![The Setup](https://github.com/IbrahimButt/Direwolf-Arch-Rice/images/finishedsetup.png)
 
 ## Installing Arch Linux
 If you already have Arch installed, install i3 and Urxvt: `sudo pacman -S i3 rxvt-unicode`.
