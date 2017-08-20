@@ -65,7 +65,6 @@ Python 3.5 or above is required, so ensure it's installed by running `python -V`
 When you're good to go:
 ```
 sudo pacman -S feh imagemagick python-pip
-
 pacaur -S python-pywal
 ```
 Note: You don't need to view package build. If you decide to view it, it'll be displayed in Vim. Type `:q` to exit Vim.
