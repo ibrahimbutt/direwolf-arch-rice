@@ -21,10 +21,21 @@ Your screen resolution may be incorrect. Run `xrandr` and identify your display.
 
 ## Lets Get Cooking!
 
-Install Dmenu, Vim and Ranger: `sudo pacman -S dmenu vim ranger`.
+![Range and Dmenu in use](https://github.com/IbrahimButt/Direwolf-Arch-Rice/blob/master/images/ranger-dmenu.png)
+
+Firstly, you will install Dmenu, Vim and Ranger. As seen above, dmenu is a GUI application launcher and Ranger is a terminal filemanager. Vim is the text editor you seen in the image at the start of this guide.
+
+To install said packages, run: `sudo pacman -S dmenu vim ranger`.
+
 Dmenu is used pressing mod+d, then typing in the package you want to use. This will only work if the package has a GUI. To use Ranger, run `ranger` in the terminal.
 
 ### Installing Pacaur
+
+Taken from the [Pacaur README](https://github.com/rmarquis/pacaur):
+> Pacaur is an Arch User Repository (AUR) helper aiming at speed and simplicity and is designed to minimize user prompt interaction.
+
+By using Pacaur, you can install packages from AUR without going through the manual build process each time.
+
 ```
 cd ~
 mkdir -p /tmp/pacaur_install
