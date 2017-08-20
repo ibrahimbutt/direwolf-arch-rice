@@ -86,10 +86,10 @@ pacaur -S polybar-git
 ### Installing My Dot Files and .Xresources
 ```
 cd ~
-git clone https://github.com/IbrahimButt/Linux-Ricing.git
-cp -r ~/Linux-Ricing/.config/ ~/
+git clone https://github.com/IbrahimButt/Direwolf-Arch-Rice.git
+cp -r ~/Direwolf-Arch-Rice/.config/ ~/
 
-cp -r ~/Linux-Ricing/.Xresources ~/
+cp -r ~/Direwolf-Arch-Rice/.Xresources ~/
 xrdb .Xresources
 ```
 You will need to run `wal -i ~/Pictures/Wal/bg1.jpg` again here, so Urxvt used the colorscheme.
