@@ -70,3 +70,6 @@ Personally, I love application launchers. It makes your workflow noticeably more
 ![Dmenu and ranger in action](https://github.com/IbrahimButt/Direwolf-Arch-Rice/blob/master/images/ranger-dmenu.png)
 
 *Note: i3WM by default does not have a feature where you can see all your applications.*
+
+#### Themeing
+
