@@ -27,7 +27,7 @@ Visit [u/unixporn](https://www.reddit.com/r/unixporn/) to see what others have c
 
 ### Overview of Set-Up
 
-### Arch Linux
+#### Arch Linux
 
 In a nuthsell, [Arch](https://www.archlinux.org/) is an independently developed general-purpose GNU/Linux distribution. The main reason you would choose this over other distrobutions is that, it comes with the bare minimum and zero bloat. This allows you to have a lean system from the beginning, which I'm a fan of.
 
@@ -51,7 +51,17 @@ Besides Pacman, the default package installer shipped with Arch. We will be inst
 
 > Pacaur is an Arch User Repository (AUR) helper aiming at speed and simplicity and is designed to minimize user prompt interaction.
 
-All you need to know for now is, it saves you a lot of time in the long-term. Without it, you would need to go through the manual build process for each package which can't be installed through Pacman. This is really something I wish I knew about when I started out. 
+All you need to know for now is, it saves you a lot of time in the long-term. Without it, you would need to go through the manual build process for each package which can't be installed through Pacman. This is really something I wish I knew about when I started out.
+
+#### Staus Bar
+
+The Polybar repository tells it best:
+
+> A fast and easy-to-use tool for creating status bars.
+
+> Polybar aims to help users build beautiful and highly customizable status bars for their desktop environment, without the need of having a black belt in shell scripting. Here are a few screenshots showing you what it can look like:
+
+Polybar is modular. Meaning, if you want to see what workspace you're on and which ones have an open window, you add a module for it. If you want to see the time and date, you add a module for it. The one I have configured and is inlcuded in this guide is very minimal, since I dont need other modules. For examples that are more customised, visit the Polybar [repository](https://github.com/jaagr/polybar) and/or u/unixporn with a [restrcited search](https://www.reddit.com/r/unixporn/search?q=polybar&restrict_sr=on) to see what can be acheived.
 
 #### Time Commitment
 You should be done in an hour, however, it may take longer depending on your internet connection.
