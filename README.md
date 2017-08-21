@@ -63,5 +63,16 @@ The Polybar repository tells it best:
 
 Polybar is modular. Meaning, if you want to see what workspace you're on and which ones have an open window, you add a module for it. If you want to see the time and date, you add a module for it. The one I have configured and is inlcuded in this guide is very minimal, since I dont need other modules. For examples that are more customised, visit the Polybar [repository](https://github.com/jaagr/polybar) and/or u/unixporn with a [restrcited search](https://www.reddit.com/r/unixporn/search?q=polybar&restrict_sr=on) to see what can be acheived.
 
+#### Application Launcher/Dynamic Menu and File Manager
+
+Personally, I love application launchers. It makes your workflow noticeably more efficent, than if you were to go onto a list of applications and click on the one you need to open. We will be going with dmenu. A simple, fast and lightweight dynamic menu.
+
+[Ranger](https://github.com/ranger/ranger) is a Vim inspired CLI filemanager and is very quick to use once you get the hang of it. Besides, it can match your colorscheme. More on that later.
+
+![Dmenu and ranger in action](https://github.com/IbrahimButt/Direwolf-Arch-Rice/blob/master/images/ranger-dmenu.png)
+
+*Note: i3WM by default does not have a feature where you can see all your applications.*
+
+
 #### Time Commitment
 You should be done in an hour, however, it may take longer depending on your internet connection.
