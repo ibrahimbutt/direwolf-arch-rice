@@ -53,6 +53,10 @@ Besides Pacman, the default package installer shipped with Arch. We will be inst
 
 All you need to know for now is, it saves you a lot of time in the long-term. Without it, you would need to go through the manual build process for each package which can't be installed through Pacman. This is really something I wish I knew about when I started out.
 
+#### Terminal Emulator
+
+We'll be using rxvt-unicode, also known as urxvt. It's fast, lightweight and highly customizable. An additional benefit is that Wal can automatically apply a generated colorscheme to it.
+
 #### Status Bar
 The Polybar repository tells it best:
 
