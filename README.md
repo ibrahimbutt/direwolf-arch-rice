@@ -35,7 +35,7 @@ We will be using [i3](https://i3wm.org/) as our WM. It is a dynamic window tilin
 
 You'll be given a mini tutorial on how to manipulate and rearrange windows once i3 has been installed.
 
-#### Package Installation
+#### Package Installer
 
 Besides Pacman, the default package installer shipped with Arch. We will be installing [Pacaur](https://github.com/rmarquis/pacaur):
 
