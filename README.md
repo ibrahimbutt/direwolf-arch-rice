@@ -25,10 +25,12 @@ There's not a lot going on, right? Yeah, that was the whole point. I mostly use 
 
 Visit [u/unixporn](https://www.reddit.com/r/unixporn/) to see what others have created.
 
-### Overview of Set-Up
+### Overview of Setup
+
+#### Time Commitment
+You should be done in an hour, however, it may take longer depending on your internet connection.
 
 #### Arch Linux
-
 In a nuthsell, [Arch](https://www.archlinux.org/) is an independently developed general-purpose GNU/Linux distribution. The main reason you would choose this over other distrobutions is that, it comes with the bare minimum and zero bloat. This allows you to have a lean system from the beginning, which I'm a fan of.
 
 If you've heard of Arch, you may have heard the installation isn't so so simple. You may even find it to put you off. Dont worry about that. [Arch-Anyhwere](https://arch-anywhere.org/) makes installation easy. The only difference is that Arch-Anywhere has an installer.
@@ -38,7 +40,6 @@ Installing Arch manually is outside the scope of this guide. If you prefer to in
 *Tip: Download Arch/Arch-Anywhere while you read on to save time.*
 
 #### Window Manager
-
 We will be using [i3](https://i3wm.org/) as our WM. It is a dynamic window tiling manager. This means, when a window is opened, it takes up the whole desktop. When you open another window, the new and existing one will be resized to be equal. This happens each time you open a new window. Mathematically, when two windows are open, each will take one-half of screen space. When a third window is opened, they'll each take one-third of screen space and so on. The same applies if they are opened vertically. Windows can be resized, arranged in tabs and stacks. They can also be floated, meaning you can move and resize windows how you would in Windows and OS X.
 
 ![Example of i3WM tiling](https://github.com/IbrahimButt/Direwolf-Arch-Rice/blob/master/images/i3wm-example.png)
@@ -46,7 +47,6 @@ We will be using [i3](https://i3wm.org/) as our WM. It is a dynamic window tilin
 You'll be given a mini tutorial on how to manipulate and rearrange windows once i3 has been installed.
 
 #### Package Installer
-
 Besides Pacman, the default package installer shipped with Arch. We will be installing [Pacaur](https://github.com/rmarquis/pacaur):
 
 > Pacaur is an Arch User Repository (AUR) helper aiming at speed and simplicity and is designed to minimize user prompt interaction.
@@ -54,7 +54,6 @@ Besides Pacman, the default package installer shipped with Arch. We will be inst
 All you need to know for now is, it saves you a lot of time in the long-term. Without it, you would need to go through the manual build process for each package which can't be installed through Pacman. This is really something I wish I knew about when I started out.
 
 #### Staus Bar
-
 The Polybar repository tells it best:
 
 > A fast and easy-to-use tool for creating status bars.
@@ -64,7 +63,6 @@ The Polybar repository tells it best:
 Polybar is modular. Meaning, if you want to see what workspace you're on and which ones have an open window, you add a module for it. If you want to see the time and date, you add a module for it. The one I have configured and is inlcuded in this guide is very minimal, since I dont need other modules. For examples that are more customised, visit the Polybar [repository](https://github.com/jaagr/polybar) and/or u/unixporn with a [restrcited search](https://www.reddit.com/r/unixporn/search?q=polybar&restrict_sr=on) to see what can be acheived.
 
 #### Application Launcher/Dynamic Menu and File Manager
-
 Personally, I love application launchers. It makes your workflow noticeably more efficent, than if you were to go onto a list of applications and click on the one you need to open. We will be going with dmenu. A simple, fast and lightweight dynamic menu.
 
 [Ranger](https://github.com/ranger/ranger) is a Vim inspired CLI filemanager and is very quick to use once you get the hang of it. Besides, it can match your colorscheme. More on that later.
@@ -72,7 +70,3 @@ Personally, I love application launchers. It makes your workflow noticeably more
 ![Dmenu and ranger in action](https://github.com/IbrahimButt/Direwolf-Arch-Rice/blob/master/images/ranger-dmenu.png)
 
 *Note: i3WM by default does not have a feature where you can see all your applications.*
-
-
-#### Time Commitment
-You should be done in an hour, however, it may take longer depending on your internet connection.
