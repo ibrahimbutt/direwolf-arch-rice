@@ -27,5 +27,21 @@ Visit [u/unixporn](https://www.reddit.com/r/unixporn/) to see what others have c
 
 ### Overview of Set-Up
 
-### Time Commitment
+#### Window Manager
+
+We will be using [i3](https://i3wm.org/) as our WM. It is a dynamic window tiling manager. This means, when a window is opened, it takes up the whole desktop. When you open another window, the new and exisiting one will be resized to be equal. This happens each time you open a new window. Mathimatically, when two windows are open, each will take one half of screen sapce. When a third window is opened, they'll each take one third of screen space and so on. The same applies if they are opened vertically. Windows can be resized, arranged in tabs and stacks. They can also be floated, meaning you can move and resize windows how you would in Windows and OS X.
+
+![Example of i3WM tiling](https://github.com/IbrahimButt/Direwolf-Arch-Rice/blob/master/images/i3wm-example.png)
+
+You'll be given a mini tutorial on how to manipulate and rearrange windows once i3 has been installed.
+
+#### Package Installation
+
+Besides Pacman, the dafault package installer shipped with Arch. We will be installing [Pacaur](https://github.com/rmarquis/pacaur):
+
+> Pacaur is an Arch User Repository (AUR) helper aiming at speed and simplicity and is designed to minimize user prompt interaction.
+
+All you need to know for now is, it saves you a lot of time in the long term. Without it, you would need to go through the manual bild process for each package that cant be installed through Pacman. This is really something I wish I knew about when I started out. 
+
+#### Time Commitment
 You should be done in an hour, however, it may take longer depending on your internet connection.
