@@ -31,11 +31,11 @@ Visit [u/unixporn](https://www.reddit.com/r/unixporn/) to see what others have c
 You should be done in an hour, however, it may take longer depending on your internet connection.
 
 #### Arch Linux
-In a nutshell, [Arch](https://www.archlinux.org/) is an independently developed general-purpose GNU/Linux distribution. The main reason you would choose this over other distributions is that it comes with the bare minimum and zero bloat. This allows you to have a lean system from the beginning, which I'm a fan of.
+In a nutshell, [Arch](https://www.archlinux.org/) is an independently developed general-purpose GNU/Linux distribution. The main reason you would choose this over other distributions is that it comes with the bare minimum and zero bloat. This allows you to have a lean system from the beginning.
 
 If you've heard of Arch, you may have heard the installation isn't so simple. You may even find it to put you off. Don't worry about that. [Arch-Anyhwere](https://arch-anywhere.org/) makes installation easy. The only difference is that Arch-Anywhere has an installer.
 
-Installing Arch manually is outside the scope of this guide. If you prefer to install it manually, visit the [installation guide](https://wiki.archlinux.org/index.php/installation_guide). Otherwise, install [Arch-Anywhere](https://arch-anywhere.org/download/).
+Installing Arch manually is outside the scope of this guide. If you prefer to install it manually, visit the [installation guide](https://wiki.archlinux.org/index.php/installation_guide). Otherwise, use [Arch-Anywhere](https://arch-anywhere.org/download/).
 
 *Tip: To save time, download Arch/Arch-Anywhere while you read on.*
 
@@ -51,11 +51,11 @@ Besides Pacman, the default package installer shipped with Arch. We will be inst
 
 > Pacaur is an Arch User Repository (AUR) helper aiming at speed and simplicity and is designed to minimize user prompt interaction.
 
-All you need to know for now is, it saves you a lot of time in the long-term. Without it, you would need to go through the manual build process for each package which can't be installed through Pacman. This is really something I wish I knew about when I started out.
+All you need to know for now is, it saves you a lot of time in the long-term. Without it, you would need to go through the manual build process for each package that can't be installed through Pacman. This is one of those things you wish you knew when you were starting out.
 
 #### Terminal Emulator
 
-We'll be using rxvt-unicode, also known as urxvt. It's fast, lightweight and highly customizable. An additional benefit is that Wal can automatically apply a generated colorscheme to it.
+We'll be using rxvt-unicode, also known as urxvt. It's fast, lightweight and highly customizable. Furthermore, Wal can automatically apply a generated colorscheme to urxvt.
 
 #### Status Bar
 The Polybar repository tells it best:
@@ -64,7 +64,7 @@ The Polybar repository tells it best:
 
 > Polybar aims to help users build beautiful and highly customizable status bars for their desktop environment, without the need of having a black belt in shell scripting. Here are a few screenshots showing you what it can look like:
 
-Polybar is modular. Meaning, if you want to see what workspace you're on and which ones have an open window, you add a module to it. If you want to see the time and date, you add a module to it. The one I have configured and is included in this guide is very minimal since I don't need other modules. For examples that are more customised, visit the Polybar [repository](https://github.com/jaagr/polybar) and/or u/unixporn with a [restrcited search](https://www.reddit.com/r/unixporn/search?q=polybar&restrict_sr=on) to see what can be achieved.
+Polybar is modular. Meaning, if you want to see what workspace you're on and which ones have an open window, you add a module for said functionality. If you want to see the time and date, you add another module. The one I have configured and is included in this guide is very minimal, since I don't need other modules. For examples with more modules, visit the Polybar [repository](https://github.com/jaagr/polybar) and/or u/unixporn with a [restrcited search](https://www.reddit.com/r/unixporn/search?q=polybar&restrict_sr=on) to see what can be achieved.
 
 #### Application Launcher/Dynamic Menu and File Manager
 Personally, I love application launchers. It makes your workflow noticeably more efficient, than if you were to go onto a list of applications and click on the one you need to open. We will be going with dmenu. A simple, fast and lightweight dynamic menu.
