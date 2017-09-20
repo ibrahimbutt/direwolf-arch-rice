@@ -127,9 +127,9 @@ Firstly, you need to install Arch. If you're doing the manual installation, the 
 
 #### Windows
 
-Download [Rufus](https://rufus.akeo.ie/) and open it up. Select your USB and down in format options, press the little button with the disk/hard-drive and select the ISO.
+Download [Rufus](https://rufus.akeo.ie/) and open it up. Select your USB and down in Format Options, press the button with the disk/hard-drive and select the ISO.
 
-Rufus should now match what's in the below screenshot, with the exception of the "Dvice", "New volume label" and the ISO image information at the very bottom of the window.
+Rufus should now match what's in the below screenshot, with the exception of the "Dvice", "New volume label" and the ISO image information at the very bottom.
 
 ![Rufus Setup](https://github.com/IbrahimButt/Direwolf-Arch-Rice/blob/dev/images/Rufus.PNG)
 
@@ -144,3 +144,9 @@ Download and use [Etcher](https://etcher.io/). Select the ISO file and USB, then
 #### Linux
 
 Google it.
+
+### Pre-Installation Notes
+
+If you install Arch manually, I will assume you also installed dmenu, rxvt-unicode and i3 during installation. If you are using Arch-Anywhere, make sure you choose them during installation. Furthermore, use 'netctl' for managing your wireless connection.
+
+Now go ahead and install Arch.
