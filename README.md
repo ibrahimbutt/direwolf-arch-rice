@@ -133,6 +133,8 @@ Rufus should now match what's in the below screenshot, with the exception of the
 
 ![Rufus Setup](https://github.com/IbrahimButt/Direwolf-Arch-Rice/blob/dev/images/Rufus.PNG)
 
+When you're ready, press start. If are asked for permission to download additional files, allow it.
+
 #### OS X
 
 Download and use [Etcher](https://etcher.io/). Select the ISO file and USB, then hit Flash.
