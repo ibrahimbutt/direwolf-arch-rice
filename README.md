@@ -115,3 +115,24 @@ Although not necessary, I will be showing you how to work with Neofetch since it
 Throughout this guide, we'll be using [Vim](http://www.vim.org/), a powerful yet lightweight text editor. For those who don't know how to use it, I'll be including the commands needed to follow this guide.
 
 
+## Lets Get Cooking!
+
+### Getting Started
+
+Firstly, you need to install Arch. If you're doing the manual installation, the Arch guide will walk you through formatting your USB. For those using Arch-Anywhere, see below on how to make a bootable USB depending on the OS you are currently using.
+
+#### Windows
+
+Download [Rufus](https://rufus.akeo.ie/) and open it up.
+
+#### OS X
+
+Download and use [Etcher](https://etcher.io/). Select the ISO file and USB, then hit Flash. 
+
+![Etcher usage.](https://etcher.io/static/screenshot.gif)
+
+*Note: The '.gif' above is taken directly from the Etcher site, so excuse the Live Image name.*
+
+#### Linux
+
+Google it.
