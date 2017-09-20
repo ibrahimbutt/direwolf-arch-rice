@@ -131,7 +131,7 @@ Download [Rufus](https://rufus.akeo.ie/) and open it up. Select your USB and dow
 
 Rufus should now match what's in the below screenshot, with the exception of the "Dvice", "New volume label" and the ISO image information at the very bottom of the window.
 
-![Rufus Setup](https://github.com/IbrahimButt/Direwolf-Arch-Rice/blob/master/images/rufus.PNG)
+![Rufus Setup](https://github.com/IbrahimButt/Direwolf-Arch-Rice/blob/dev/images/Rufus.PNG)
 
 #### OS X
 
