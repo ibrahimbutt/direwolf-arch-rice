@@ -149,6 +149,93 @@ Google it.
 
 ### Pre-Installation Notes
 
-If you install Arch manually, I will assume you also installed dmenu, rxvt-unicode and i3 during installation. If you are using Arch-Anywhere, make sure you choose them during installation. Furthermore, use 'netctl' for managing your wireless connection.
+For the purpose of this guide, I will assume you are using 'netctl' for managing your wireless connection.
 
 Now go ahead and install Arch.
+
+### If You ALready Have Arch Installed
+
+To follow this guide, you'll need i3, rxvt-unicode and dmenu. Fire up your terminal and run `sudo pacman -S i3 rxvt-unicode dmenu vim`.
+
+### First Boot/Log-In
+
+If you installed a login manager, make sure to select i3 as the desktop environment. For example, the gnome login manager has a small settings/cog icon that lets you do so. If you didn't install a graphical login manager, you'll see what appears to be a fullscreen terminal. Enter your username and press enter, then do the same with your password. Once you are logged in, type `startx` and press enter to launch i3.
+
+You will be prompted to select the windows or alt key as a modifier. The modifier key is used for controlling the window manager. After this, select yes to creating a config file.
+
+Open the terminal by pressing `mod+enter`, then run sudo wifi-menu to create a wireless profile and remember its name. Then run `sudo netctl enable <profile_name>`. This automatically connects you to wifi on each boot. Now run `reboot`.
+
+### Screen Resolution
+
+Your screen resolution may be incorrect. Run `xrandr` and identify your display. Then run `xrandr --output <source_name> --mode 2560x1440 --rate <refresh_rate>` For me it is `xrandr --output DP1-8 --mode 2560x1440 --rate 59.95`. If you have multiple monitors, check out the [documentation](https://wiki.archlinux.org/index.php/Xrandr). The xrandr setting isn't permanent for now, we'll get to that later.
+
+
+### Guide Dependencies
+
+Before we get to the ricing, we need to install a few things first.
+
+#### Install Dmenu, Vim and Ranger
+
+`sudo pacman -S dmenu vim ranger`
+
+To use Dmenu, press `mod+d`. Only packages that have a GUI will appear if selected through Dmenu, otherwise it'll seem as if it's not working. This is normal.
+
+To Use Ranger, run `ranger`.
+
+#### Install Pacaur
+
+```
+cd ~
+mkdir -p /tmp/pacaur_install
+cd /tmp/pacaur_install
+
+sudo pacman -S base-devel
+
+sudo pacman -S expac yajl git
+
+curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=cower
+makepkg PKGBUILD --skippgpcheck --install --needed
+
+curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=pacaur
+makepkg PKGBUILD --install --needed
+
+cd ~
+rm -r /tmp/pacaur_install
+```
+
+#### Install Pywal
+
+Python 3.5 or above is required, so ensure it's installed by running `python -V`. If it isn't, install it: `pacaur -S python`.
+
+When you're good to go:
+```
+sudo pacman -S feh imagemagick python-pip
+pacaur -S python-pywal
+```
+*Note: You don't need to view package build. If you decide to view it, it'll be displayed in Vim. Type `:q` to exit Vim.*
+
+![Wallpaper](https://github.com/IbrahimButt/Direwolf-Arch-Rice/blob/master/images/wallpaper.jpg)
+
+Right click on the image above and save as `bg1.jpg`. Now do the following:
+```
+cd ~
+mkdir ~/Pictures/Wal/
+mv ~/Downloads/bg1.jpg ~/Pictures/Wal/
+wal -i ~/Pictures/Wal/bg1.jpg
+```
+
+#### Install Polybar
+
+First you'll need to install the dependencies and then Polybar itself:
+```
+sudo pacman -S cairo libxcb python2 xcb-proto xcb-util-image xcb-util-wm xcb-util-xrm jsoncpp
+pacaur -S polybar-git
+```
+
+#### Install Fonts
+
+`pacaur -S otf-overpass`
+
+
+
+
