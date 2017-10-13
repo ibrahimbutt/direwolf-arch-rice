@@ -131,7 +131,7 @@ To customise what is displayed when you run `neofetch` or the above command, com
 
 ` polybar bar`
 
-Go into ranger and type `zh` to display hidden files. Then go to `~/.config/polybar/launch.sh`. Here you'll have a preview of the file. Read it to understand what is happening each time you boot/refresh i3.
+Go into ranger and type `zh` to display hidden files. Then go to `~/.config/polybar/launch.sh`. Here you'll have a preview of the file. Read it to understand what is happening each time you boot/refresh i3. On line 5, replace `DPI-8` with the source name of your display connection from running `xrandr`.
 
 ## Done!
 
