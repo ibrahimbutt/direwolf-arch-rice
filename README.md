@@ -232,10 +232,55 @@ sudo pacman -S cairo libxcb python2 xcb-proto xcb-util-image xcb-util-wm xcb-uti
 pacaur -S polybar-git
 ```
 
+#### Install Dot Files
+
+```
+cd ~
+git clone https://github.com/IbrahimButt/Direwolf-Arch-Rice.git
+cp -r ~/Direwolf-Arch-Rice/.config/ ~/
+
+cp -r ~/Direwolf-Arch-Rice/.Xresources ~/
+xrdb .Xresources
+```
+You will need to run wal -i ~/Pictures/Wal/bg1.jpg again here, so Urxvt uses the colorscheme.
+
+Refresh i3 by pressing mod+r.
+
+Only terminals and windows opened after this point will have those two changes applied to them.
+
 #### Install Fonts
 
 `pacaur -S otf-overpass`
 
+Refresh i3 to load changes.
 
+### Make Changes To i3 Config
+Read through the whole config file and understand what's happening. Change anything that's necessary. The comments will give you hints as to what you may want to change. Do not skip this step. It'll teach you got to use i3.
+
+### Preview Images In Ranger
+
+Install w3m: `sudo pacman -S w3m`. Then run `vim ~/.config/ranger/rc.conf`. Read it and understand it. Lastly, run `ranger --copy-config=scope`.
+
+Run `ranger` in the terminal and use arrows keys to navigate. Make your way to `~/Pictures/Wal/bg1.jpg` and you should see a preview of it.
+
+### Neofetch System Info and Replace ASCII Logo With Image
+
+`neofetch --w3m --source ~/Pictures/Wal/bg1.jpg`
+
+To customise what is displayed when you run `neofetch` or the above command, comment in/out lines in `~/.config/neofetch/config`.
+
+### Activate Polybar
+
+` polybar bar`
+
+Go into ranger and type `zh` to display hidden files. Then go to `~/.config/polybar/launch.sh`. Here you'll have a preview of the file. Read it to understand what is happening each time you boot/refresh i3. On line 5, replace `DPI-8` with the source name of your display connection from running `xrandr`.
+
+## Done!
+
+Your set up should be identical to mines now.
+
+## Known Issues
+
+The xrandr setting needs to be set on each boot if you're using startx. Therefore, I've added it as an `exec_always` in the i3 config. Refresh i3 to apply it on each boot. I'm currently in the process of figuring this out. If you have any other issues, feel free to raise it on here..
 
 
