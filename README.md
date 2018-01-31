@@ -219,7 +219,7 @@ pacaur -S python-pywal
 Right click on the image above and save as `bg1.jpg`. Now do the following:
 ```
 cd ~
-mkdir ~/Pictures/Wal/
+mkdir -p ~/Pictures/Wal/
 mv ~/Downloads/bg1.jpg ~/Pictures/Wal/
 wal -i ~/Pictures/Wal/bg1.jpg
 ```
