@@ -236,10 +236,10 @@ pacaur -S polybar-git
 
 ```
 cd ~
-git clone https://github.com/IbrahimButt/Direwolf-Arch-Rice.git
-cp -r ~/Direwolf-Arch-Rice/.config/ ~/
+git clone https://github.com/IbrahimButt/direwolf-arch-rice.git
+cp -r ~/direwolf-arch-rice/.config/ ~/
 
-cp -r ~/Direwolf-Arch-Rice/.Xresources ~/
+cp -r ~/direwolf-arch-rice/.Xresources ~/
 xrdb .Xresources
 ```
 You will need to run wal -i ~/Pictures/Wal/bg1.jpg again here, so Urxvt uses the colorscheme.
