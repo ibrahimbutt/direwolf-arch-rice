@@ -22,7 +22,7 @@ If the term confuses you, you aren't alone. You're probably thinking, what does 
 
 There's not a lot going on, right? Yeah, that was the whole point. I mostly use Firefox and Vim. I don't need much. It's my personal setup and what I'm using at the time of writing. If you want more, this guide will teach you the basics and provide a set-up to 'improve' on with your own needs in mind.
 
-Visit [u/unixporn](https://www.reddit.com/r/unixporn/) to see what others have created.
+Visit [r/unixporn](https://www.reddit.com/r/unixporn/) to see what others have created.
 
 ### Overview of Setup
 
