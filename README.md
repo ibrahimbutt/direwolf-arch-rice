@@ -153,7 +153,7 @@ For the purpose of this guide, I will assume you are using 'netctl' for managing
 
 Now go ahead and install Arch.
 
-### If You ALready Have Arch Installed
+### If You Already Have Arch Installed
 
 To follow this guide, you'll need i3, rxvt-unicode and dmenu. Fire up your terminal and run `sudo pacman -S i3 rxvt-unicode dmenu vim`.
 
