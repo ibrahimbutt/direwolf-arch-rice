@@ -145,7 +145,11 @@ Download and use [Etcher](https://etcher.io/). Select the ISO file and USB, then
 
 #### Linux
 
-Google it.
+![RosaImageWriter](http://wiki.rosalab.ru/en/images/0/0b/RosaImageWriter-2.6-eng.png)
+
+*This also isn't my image.*
+
+Download and execute RosaImageWriter with root permissions using `sudo ./RosaImageWriter` or in KDE, press on the execeutable.
 
 ### Pre-Installation Notes
 
