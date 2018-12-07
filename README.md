@@ -12,7 +12,7 @@ Those who dislike extra/unneeded features cluttering their DE. With ricing and L
 
 ### Hold up... "ricing"?
 
-If the term confuses you, you aren't alone. You're probably thinking, what does rice have to do with computers, at all? Below is the definition of ricing taken from [u/unixporn](https://www.reddit.com/r/unixporn/):
+If the term confuses you, you aren't alone. You're probably thinking, what does rice have to do with computers, at all? Below is the definition of ricing taken from [r/unixporn](https://www.reddit.com/r/unixporn/):
 
 > "Rice" is a word that is commonly used to refer to making visual improvements and customizations on one's desktop. It was inherited from the practice of customizing cheap Asian import cars to make them appear to be faster than they actually were - which was also known as "ricing". Here on /r/unixporn, the word is accepted by the majority of the community and is used sparingly to refer to a visually attractive desktop upgraded beyond the default.
 
@@ -50,9 +50,9 @@ You'll be given a mini tutorial on how to manipulate and rearrange windows once 
 
 #### Package Installer
 
-Besides Pacman, the default package installer shipped with Arch. We will be installing [Pacaur](https://github.com/rmarquis/pacaur):
+Besides Pacman, the default package installer shipped with Arch. We will be installing [Yay](https://aur.archlinux.org/packages/yay):
 
-> Pacaur is an Arch User Repository (AUR) helper aiming at speed and simplicity and is designed to minimize user prompt interaction.
+> Yay, yet another yogurt. Pacman wrapper and AUR helper written in go.
 
 All you need to know for now is, it saves you a lot of time in the long-term. Without it, you would need to go through the manual build process for each package that can't be installed through Pacman. This is one of those things you wish you knew when you were starting out.
 
@@ -228,7 +228,7 @@ wal -i ~/Pictures/Wal/bg1.jpg
 First you'll need to install the dependencies and then Polybar itself:
 ```
 sudo pacman -S cairo libxcb python2 xcb-proto xcb-util-image xcb-util-wm xcb-util-xrm jsoncpp
-pacaur -S polybar-git
+yay -S polybar-git
 ```
 
 #### Install Dot Files
@@ -249,7 +249,7 @@ Only terminals and windows opened after this point will have those two changes a
 
 #### Install Fonts
 
-`pacaur -S otf-overpass`
+`yay -S otf-overpass`
 
 Refresh i3 to load changes.
 
