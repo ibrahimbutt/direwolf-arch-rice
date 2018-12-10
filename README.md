@@ -139,15 +139,11 @@ When you're ready, press start. If are asked for permission to download addition
 
 Download and use [Etcher](https://etcher.io/). Select the ISO file and USB, then hit Flash.
 
-![Etcher Usage.](https://etcher.io/static/screenshot.gif)
-
-*Note: The '.gif' above is taken directly from the Etcher site, so excuse the Live Image name.*
+![Etcher Usage.](https://www.balena.io/static/steps-8006dca57323756b1b84fb9408742409.gif)
 
 #### Linux
 
 ![RosaImageWriter](http://wiki.rosalab.ru/en/images/0/0b/RosaImageWriter-2.6-eng.png)
-
-*This also isn't my image.*
 
 Download and execute RosaImageWriter with root permissions using `sudo ./RosaImageWriter` or in KDE, press on the execeutable.
 
