@@ -182,25 +182,23 @@ To use Dmenu, press `mod+d`. Only packages that have a GUI will appear if select
 
 To Use Ranger, run `ranger`.
 
-#### Install Pacaur
+#### Install Yay
 
 ```
 cd ~
-mkdir -p /tmp/pacaur_install
-cd /tmp/pacaur_install
+mkdir -p /tmp/yay_install
+cd /tmp/yay_install
 
 sudo pacman -S base-devel
 
 sudo pacman -S expac yajl git
 
-curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=cower
-makepkg PKGBUILD --skippgpcheck --install --needed
-
-curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=pacaur
-makepkg PKGBUILD --install --needed
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 
 cd ~
-rm -r /tmp/pacaur_install
+rm -r /tmp/yay_install
 ```
 
 #### Install Pywal
