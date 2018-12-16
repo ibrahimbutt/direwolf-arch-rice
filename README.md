@@ -46,7 +46,7 @@ We will be using [i3](https://i3wm.org/) as our WM. It is a dynamic window tilin
 
 ![Example of i3WM tiling](https://github.com/IbrahimButt/Direwolf-Arch-Rice/blob/master/images/i3wm-example.png)
 
-You'll be given a mini tutorial on how to manipulate and rearrange windows once i3 has been installed.
+You can read the usage documentation [here](https://i3wm.org/docs/userguide.html#_using_i3).
 
 #### Package Installer
 
