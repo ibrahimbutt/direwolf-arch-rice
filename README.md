@@ -34,9 +34,9 @@ You should be done in an hour, however, it may take longer depending on your int
 
 In a nutshell, [Arch](https://www.archlinux.org/) is an independently developed general-purpose GNU/Linux distribution. The main reason you would choose this over other distributions is that it comes with the bare minimum and zero bloat. This allows you to have a lean system from the beginning.
 
-If you've heard of Arch, you may have heard the installation isn't so simple. You may even find it to put you off. Don't worry about that. [Anarchy Linux](https://anarchy-linux.org/) makes installation easy. The only difference is that Anarchy Linux has an installer.
+If you've heard of Arch, you may have heard the installation isn't so simple. You may even find it to put you off. Don't worry about that. [Anarchy Linux](https://www.anarchylinux.org/) makes installation easy. The only difference is that Anarchy Linux has an installer.
 
-Installing Arch manually is outside the scope of this guide. If you prefer to install it manually, visit the [installation guide](https://wiki.archlinux.org/index.php/installation_guide). Otherwise, use [Anarchy Linux](https://anarchy-linux.org/download/).
+Installing Arch manually is outside the scope of this guide. If you prefer to install it manually, visit the [installation guide](https://wiki.archlinux.org/index.php/installation_guide). Otherwise, use [Anarchy Linux](https://www.anarchylinux.org/download/).
 
 *Tip: To save time, download Arch/Anarchy Linux while you read on.*
 
