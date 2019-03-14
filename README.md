@@ -1,5 +1,7 @@
 # Ricing Arch Linux
 
+[![Sparkline](https://stars.medv.io/ibrahimbutt/direwolf-arch-rice.svg)](https://stars.medv.io/ibrahimbutt/direwolf-arch-rice)
+
 ## Foreword
 
 ### Who is this guide for?
