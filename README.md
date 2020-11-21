@@ -282,4 +282,8 @@ Your set up should be identical to mines now.
 
 The xrandr setting needs to be set on each boot if you're using startx. Therefore, I've added it as an `exec_always` in the i3 config. Refresh i3 to apply it on each boot. I'm currently in the process of figuring this out. If you have any other issues, feel free to raise it on here..
 
+## Shameless Plug
+
+See what I'm upto and my latest work, or say hello, on Twitter: [@madebyibrahim](https://twitter.com/madebyibrahim)
+
 
