@@ -254,7 +254,7 @@ Only terminals and windows opened after this point will have those two changes a
 Refresh i3 to load changes.
 
 ### Make Changes To i3 Config
-Read through the whole config file and understand what's happening. Change anything that's necessary. The comments will give you hints as to what you may want to change. Do not skip this step. It'll teach you got to use i3.
+Read through the whole config file and understand what's happening. Change anything that's necessary. The comments will give you hints as to what you may want to change. Do not skip this step. It'll teach you how to use i3.
 
 ### Preview Images In Ranger
 
