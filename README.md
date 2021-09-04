@@ -200,7 +200,7 @@ cd yay
 makepkg -si
 
 cd ~
-rm -r /tmp/yay_install
+rm -rf /tmp/yay_install
 ```
 
 #### Install Pywal
